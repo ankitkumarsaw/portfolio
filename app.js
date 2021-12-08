@@ -107,8 +107,8 @@ var menulist = document.getElementById("menulist");
        }
 
 
-const sections = document.querySelectorAll("mov");
-const navLi = document.querySelectorAll("dpg6");
+const sections = document.getElementsByClassName("spg4");
+const navLi = document.getElementsByClassName("dpg6");
 window.onscroll = () => {
   var current = "";
 

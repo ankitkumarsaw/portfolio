@@ -513,7 +513,7 @@ nav .second li a:hover {
 .spg4 div {
     position: relative;
     top: 110px;
-    opacity: 1;
+    opacity: 0;
     transform: translateY(150px);
     transition: all 2s ease;
     background-color: #fff;
@@ -537,7 +537,7 @@ nav .second li a:hover {
 }
 
 .spg4 .active{
-    opacity: 0;
+    opacity: 1;
     transform: translateY(0px);
     -webkit-transform: translateY(0px);
     -moz-transform: translateY(0px);
@@ -786,21 +786,22 @@ input[type=submit]:hover {
     }
 
     .second {
+        position: relative;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+       right: inherit;
         width: 80%;
         background: linear-gradient(#0cccff
         2, #0c9dfb
         ); 
         z-index: 2;
         top: -25px;
+        
 
     }
     .second li{
-        margin: 10px;
-        padding: 5px;
+        margin: 8px;
+        padding: 2.5px;
     }
 
 
@@ -890,14 +891,13 @@ overflow: hidden;
         display: block;
         text-align: center;
         align-items: center;
-        top: 20%;
+        top: 30%;
         position: relative;
 
     }
 
 
 }
-
 @media only screen and (max-width: 700px) {
     .cont {
         height: 100px;
@@ -922,10 +922,7 @@ overflow: hidden;
         font-size: 14px;
     }
 
-    .spg {
-        top: -27.5px;
-    }
-
+    
     .prc {
         position: relative;
         top: 50px;
